@@ -1,8 +1,8 @@
 body {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;
 }
 .card-grid {
-    margin-top: 20px; /* Space below the navbar */
+    margin-top: 20px;
 }
 
 .card {
