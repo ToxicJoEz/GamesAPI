@@ -1,22 +1,27 @@
-/* Ensure the card takes up full height and aligns items correctly */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+.card-grid {
+    margin-top: 20px; /* Space below the navbar */
+}
+
 .card {
     display: flex;
-    flex-direction: column;  /* Stack the content vertically */
+    flex-direction: column;  
     height: 100%;
-    max-height: 100%;  /* Ensure that the card does not stretch beyond the container */
+    max-height: 100%;  
     background-color: #fff;
 }
 
-/* Ensure the body of the card grows to take available space */
 .card-body {
-    flex-grow: 1;  /* This ensures the body of the card expands to take up remaining space */
+    flex-grow: 1;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 20px;  /* Padding to prevent text from touching the bottom */
+    padding-bottom: 20px;  
 }
 
-/* Styling for the card's title, short description, and category */
+
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -27,13 +32,13 @@
     color: #6c757d;
 }
 
-/* Image styling (fixed size, cover mode) */
+
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
-/* Footer area for the button and platform */
+
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -43,47 +48,43 @@
 }
 
 .card-footer .btn {
-    flex: 0 1 auto;  /* Button stays to the left */
+    flex: 0 1 auto;  
 }
 
 .card-footer .platform {
-    flex: 0 1 auto;  /* Platform text stays to the right */
-    text-align: right; /* Ensure it's aligned to the right */
+    flex: 0 1 auto;  
+    text-align: right; 
 }
 
-/* Ensure all cards inside the row have equal height */
+
 .card-grid .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -10px;  /* Adjust for margin */
-    margin-left: -10px;  /* Adjust for margin */
+    margin-right: -10px;  
+    margin-left: -10px;  
 }
 
-/* Adjust for 4 cards per row by setting the col width to 3 on large screens */
 .card-grid .col-lg-3,
 .card-grid .col-md-3,
 .card-grid .col-sm-6 {
     display: flex;
-    flex-direction: column;  /* Ensures each column behaves like a flex container */
-    align-items: stretch;  /* Stretch each card to the full height of the column */
-    padding-right: 10px;  /* Control padding between cards */
-    padding-left: 10px;  /* Control padding between cards */
+    flex-direction: column;  
+    align-items: stretch;  
+    padding-right: 10px;  
+    padding-left: 10px;  
 }
 
-/* Optional: Add spacing between rows */
 .card-grid .row {
     margin-bottom: 20px;
 }
 
-/* Active Genre Styles */
 .nav-link.active.genre {
-    font-size: 1.2rem;  /* Increase font size */
-    font-weight: bold;  /* Make text bold */
-    color: white !important;  /* Make text white */
-    border-bottom: 2px solid white;  /* Add a white bottom border */
+    font-size: 1.2rem;
+    font-weight: bold;  
+    color: white !important;  
+    border-bottom: 2px solid white;  
 }
 
-/* Custom CSS to make the modal take up 80% of the page's width */
 .modal-dialog {
-    max-width: 80% !important;  /* Set the maximum width to 80% */
+    max-width: 80% !important;  
 }
